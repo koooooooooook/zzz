@@ -32,19 +32,26 @@ def read_txt(path: str) -> str:
 def main() -> None:
     project_id = sys.argv[1] if len(sys.argv) > 1 else "default"
     rag = NovelRAG(project_id)
-    files = [f for f in os.listdir(config.DATA_NOVELS_DIR)
-             if f.lower().endswith(".txt")]
+    # Walk recursively: subfolders under data/novels/ are supported.
+    # The relative path (e.g. "scifi/mars.txt") is used as the document name.
+    files = []
+    for dirpath, _dirnames, filenames in os.walk(config.DATA_NOVELS_DIR):
+        for fn in filenames:
+            if fn.lower().endswith(".txt"):
+                full = os.path.join(dirpath, fn)
+                rel = os.path.relpath(full, config.DATA_NOVELS_DIR)
+                files.append((rel, full))
     if not files:
         print(f"No .txt files found in {config.DATA_NOVELS_DIR}")
         print("(Optional — the pipeline works without a reference corpus.)")
         return
     total = 0
-    for name in sorted(files):
-        path = os.path.join(config.DATA_NOVELS_DIR, name)
+    for rel, path in sorted(files):
         text = read_txt(path)
-        n = rag.add_reference(os.path.splitext(name)[0], text)
+        doc_name = os.path.splitext(rel)[0].replace(os.sep, "/")
+        n = rag.add_reference(doc_name, text)
         total += n
-        print(f"  {name}: {len(text)} chars -> {n} chunks")
+        print(f"  {doc_name}: {len(text)} chars -> {n} chunks")
     print(f"Ingested {total} chunks into ChromaDB collection 'reference' "
           f"(rag_db/{project_id}/)")
     print(f"Counts: {rag.counts()}")

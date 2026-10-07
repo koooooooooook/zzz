@@ -52,7 +52,7 @@ overridden with the environment variables `LMSTUDIO_BASE_URL` and `LMSTUDIO_MODE
 
 ## 3. Optional training corpus
 
-Put TXT files you have permission to use in:
+Put TXT files you have permission to use in (subfolders are supported — they are scanned recursively):
 
     data/novels/
 
