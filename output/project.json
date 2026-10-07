@@ -1,0 +1,119 @@
+{
+  "project_id": "ui-smoke",
+  "title": "The Salt Hour",
+  "premise": "A lighthouse keeper discovers the light answers back.",
+  "genre": "sci-fi horror",
+  "style": "lyrical",
+  "target_chars": 6000,
+  "chapter_target_chars": 2500,
+  "logline": "A lighthouse keeper discovers the light answers back.",
+  "outline": {
+    "title": "The Salt Hour",
+    "logline": "A lighthouse keeper discovers the light answers back.",
+    "beats": [
+      {
+        "chapter": 1,
+        "beat": "Chapter 1: advance the setup phase of the story.",
+        "arc": "setup"
+      },
+      {
+        "chapter": 2,
+        "beat": "Chapter 2: advance the setup phase of the story.",
+        "arc": "setup"
+      },
+      {
+        "chapter": 3,
+        "beat": "Chapter 3: advance the setup phase of the story.",
+        "arc": "setup"
+      },
+      {
+        "chapter": 4,
+        "beat": "Chapter 4: advance the setup phase of the story.",
+        "arc": "setup"
+      },
+      {
+        "chapter": 5,
+        "beat": "Chapter 5: advance the setup phase of the story.",
+        "arc": "setup"
+      },
+      {
+        "chapter": 6,
+        "beat": "Chapter 6: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 7,
+        "beat": "Chapter 7: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 8,
+        "beat": "Chapter 8: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 9,
+        "beat": "Chapter 9: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 10,
+        "beat": "Chapter 10: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 11,
+        "beat": "Chapter 11: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 12,
+        "beat": "Chapter 12: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 13,
+        "beat": "Chapter 13: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 14,
+        "beat": "Chapter 14: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 15,
+        "beat": "Chapter 15: advance the rising phase of the story.",
+        "arc": "rising"
+      },
+      {
+        "chapter": 16,
+        "beat": "Chapter 16: advance the climax phase of the story.",
+        "arc": "climax"
+      },
+      {
+        "chapter": 17,
+        "beat": "Chapter 17: advance the climax phase of the story.",
+        "arc": "climax"
+      },
+      {
+        "chapter": 18,
+        "beat": "Chapter 18: advance the climax phase of the story.",
+        "arc": "climax"
+      },
+      {
+        "chapter": 19,
+        "beat": "Chapter 19: advance the resolution phase of the story.",
+        "arc": "resolution"
+      },
+      {
+        "chapter": 20,
+        "beat": "Chapter 20: advance the resolution phase of the story.",
+        "arc": "resolution"
+      }
+    ]
+  },
+  "status": "complete",
+  "created": "2026-10-07 02:18:49",
+  "total_chars": 11756
+}
